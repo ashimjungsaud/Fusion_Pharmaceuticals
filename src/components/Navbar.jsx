@@ -20,7 +20,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='sticky top-0 z-10 bg-black flex justify-between items-center h-24 px-2 md:px-8 mx-auto text-white backdrop-filter backdrop-blur-lg bg-opacity-20 border-gray-200'>
+        <div className='sticky top-0 z-10 bg-black flex justify-between items-center h-24 px-2 md:px-8 mx-auto text-white backdrop-filter backdrop-blur bg-opacity-20 border-gray-200'>
             {/* Logo */}
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Fusion Pharmaceuticals</h1>
 
