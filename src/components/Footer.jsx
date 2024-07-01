@@ -94,7 +94,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a href="#" className="text-gray-300 hover:text-white text-sm">
-                                Terms &amp; Conditions
+                                Our Services
                             </a>
                         </li>
                         <li>

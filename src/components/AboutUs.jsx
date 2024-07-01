@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+    const navigate = useNavigate();
+
     return (
         <>
-            <section className="overflow-hidden pt-2 bg-white dark:bg-dark">
+            <section className="overflow-hidden pt-2 bg-black dark:bg-dark">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap items-center justify-between -mx-4">
                         <div className="w-full px-4 lg:w-6/12">
@@ -611,28 +614,29 @@ const AboutUs = () => {
                                 <span className="block mb-4 text-lg font-semibold text-primary text-blue-700">
                                     About Us
                                 </span>
-                                <h2 className="mb-5 text-3xl font-bold text-black sm:text-[40px]/[48px]">
+                                <h2 className="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px]">
                                     Make your customers happy by giving services.
                                 </h2>
-                                <p className="mb-5 text-base text-body-color dark:text-dark-6">
+                                <p className="mb-5 text-base text-white dark:text-dark-6">
                                     It is a long established fact that a reader will be distracted
                                     by the readable content of a page when looking at its layout.
                                     The point of using Lorem Ipsum is that it has a more-or-less.
                                 </p>
-                                <p className="mb-8 text-base text-body-color dark:text-dark-6">
+                                <p className="mb-8 text-base text-white dark:text-dark-6">
                                     A domain name is one of the first steps to establishing your
                                     brand. Secure a consistent brand image with a domain name that
                                     matches your business.
                                 </p>
-                                <a
-                                    href="javascript:void(0)"
-                                    className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
-                                >
-                                    Get Started
-                                </a>
+
+                                <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => navigate('service')}>
+                                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                        Know us more
+                                    </span>
+                                </button>
                             </div>
 
-                            
+
                         </div>
                     </div>
                 </div>
