@@ -8,7 +8,7 @@ const AboutUs = () => {
         <>
             <section className="overflow-hidden pt-2 bg-black dark:bg-dark">
                 <div className="container mx-auto">
-                    <div className="flex flex-wrap items-center justify-between -mx-4">
+                    <div className="flex flex-wrap items-center justify-between m-4">
                         <div className="w-full px-4 lg:w-6/12">
                             <div className="flex items-center -mx-3 sm:-mx-4">
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
@@ -611,7 +611,7 @@ const AboutUs = () => {
 
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="mt-10 lg:mt-0">
-                                <span className="block mb-4 text-lg font-semibold text-primary text-blue-700">
+                                <span className="block mb-4 text-xl font-semibold text-primary text-blue-700">
                                     About Us
                                 </span>
                                 <h2 className="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px]">

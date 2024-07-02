@@ -26,7 +26,7 @@ const stats = [
 
 const Statistics = () => {
     return (
-        <div className="relative bg-cover bg-center text-white py-12 object-cover" style={{ backgroundImage: "url('/images/wideImage.jpeg')" }}>
+        <div className="relative bg-cover bg-center text-white py-12 object-cover" style={{ backgroundImage: "url('/images/formula.webp')" }}>
             <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for better readability */}
             <div className="container mx-auto flex justify-around relative z-10">
                 {stats.map((stat, index) => (
