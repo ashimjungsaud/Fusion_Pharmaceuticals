@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Hero = () => {
 
     return (
-        <div className="">
+        <div className="pt-12">
             <section className="relative py-12 overflow-hidden bg-black sm:pb-16 lg:pb-20 xl:pb-24">
                 <div className="px-4 mx-auto relativea sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
+                        
                         <div>
                             <h1 className="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">Connecting Devs with Employers</h1>
                             <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
@@ -49,12 +50,14 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="hidden md:flex">
                             {/* <div className="absolute inset-0">
                                 <img className="object-cover w-full h-full opacity-50 bg-blue-700" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png" alt="" />
                             </div> */}
                             <img className="w-full h-auto" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/2/illustration.png" alt="description" />
                         </div>
+
                     </div>
                 </div>
             </section>

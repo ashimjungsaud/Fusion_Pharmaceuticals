@@ -1,10 +1,10 @@
 import React from 'react'
-import { Header } from '../components/Header'
+// import { Navbar } from '../components/Header'
 
 export const OurService = () => {
   return (
     <div>
-      <Header/>
+      {/* <Navbar /> */}
       <h1>Service</h1>
     </div>
   )

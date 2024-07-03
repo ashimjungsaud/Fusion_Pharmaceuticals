@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-export const Header = () => {
+const Header = () => {
     const [expanded, setExpanded] = useState(false);
 
     return (
         <div>
-            <header className="py-4 bg-black sm:py-6" x-data="{expanded: false}">
+            <header className="py-4 bg-black sm:py-6 fixed top-0 left-0 w-full" x-data="{expanded: false}">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between">
                         <div className="shrink-0">
@@ -58,3 +58,5 @@ export const Header = () => {
         </div>
     )
 }
+
+export default Header;

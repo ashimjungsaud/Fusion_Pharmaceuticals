@@ -1,69 +1,60 @@
 import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
-const Navbar = () => {
-    // State to manage the navbar's visibility
-    const [nav, setNav] = useState(false);
-
-    // Toggle function to handle the navbar's display
-    const handleNav = () => {
-        setNav(!nav);
-    };
-
-    // Array containing navigation items
-    const navItems = [
-        { id: 1, text: 'Home' },
-        { id: 2, text: 'Company' },
-        { id: 3, text: 'Resources' },
-        { id: 4, text: 'About' },
-        { id: 5, text: 'Contact' },
-    ];
+export const Navbar = () => {
+    const [expanded, setExpanded] = useState(false);
 
     return (
-        <div className='sticky top-0 z-10 bg-black flex justify-between items-center h-24 px-2 md:px-8 mx-auto text-white backdrop-filter backdrop-blur bg-opacity-20 border-gray-200'>
-            {/* Logo */}
-            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Fusion Pharmaceuticals</h1>
+        <div>
+            <header className="py-4 bg-black sm:py-6 z-10 fixed top-0 left-0 w-full" x-data="{expanded: false}">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="flex items-center justify-between">
+                        <div className="shrink-0">
+                            <a href="#" title="" className="flex">
+                                <img className="w-auto h-9" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/logo.svg" alt="" />
+                            </a>
+                        </div>
 
-            {/* Desktop Navigation */}
-            <ul className='hidden md:flex'>
-                {navItems.map(item => (
-                    <li
-                        key={item.id}
-                        className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
-                    >
-                        {item.text}
-                    </li>
-                ))}
-            </ul>
+                        <div className="flex md:hidden">
+                            <button type="button" className="text-white" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>
+                                <span className={expanded ? 'hidden' : 'block'} aria-hidden="true">
+                                    <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </span>
 
-            {/* Mobile Navigation Icon */}
-            <div onClick={handleNav} className='block md:hidden'>
-                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-            </div>
+                                <span className={!expanded ? 'hidden' : 'block'} aria-hidden="true">
+                                    <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
 
-            {/* Mobile Navigation Menu */}
-            <ul
-                className={
-                    nav
-                        ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500'
-                        : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
-                }
-            >
-                {/* Mobile Logo */}
-                <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
+                        <nav className="hidden ml-10 mr-auto space-x-10 lg:ml-20 lg:space-x-12 md:flex md:items-center md:justify-start">
+                            <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Products </a>
+                            <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Features </a>
+                            <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Pricing </a>
+                            <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Support </a>
+                        </nav>
 
-                {/* Mobile Navigation Items */}
-                {navItems.map(item => (
-                    <li
-                        key={item.id}
-                        className='p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'
-                    >
-                        {item.text}
-                    </li>
-                ))}
-            </ul>
+                        <div className="relative hidden md:items-center md:justify-center md:inline-flex group">
+                            <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
+                            <a href="#" title="" className="relative inline-flex items-center justify-center px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button"> Start free trial </a>
+                        </div>
+                    </div>
+
+                    <nav className={expanded ? 'flex flex-col pt-8 pb-4 space-y-6' : 'hidden'} x-collapse>
+                        <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Products </a>
+                        <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Features </a>
+                        <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Pricing </a>
+                        <a href="#" title="" className="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Support </a>
+                        <div className="relative inline-flex items-center justify-center group">
+                            <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
+                            <a href="#" title="" className="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button"> Start free trial </a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
         </div>
-    );
-};
-
-export default Navbar;
+    )
+}
