@@ -15,7 +15,7 @@ const stats = [
     {
         icon: <PiWarehouse className="h-12 w-12 mx-auto text-emerald-400" />,
         value: '2+',
-        label: 'Licensed',
+        label: 'License',
     },
     {
         icon: <PiWarehouse className="h-12 w-12 mx-auto text-emerald-400" />,
