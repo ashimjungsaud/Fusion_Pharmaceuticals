@@ -2,8 +2,8 @@ import React from 'react';
 
 const stats = [
     {
-        data: "35K",
-        title: "Customers"
+        data: "100+",
+        title: "Distribution Channel"
     },
     {
         data: "10K+",
