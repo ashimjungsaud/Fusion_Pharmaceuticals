@@ -6,8 +6,8 @@ const stats = [
         title: "Distribution Channel"
     },
     {
-        data: "10K+",
-        title: "Downloads"
+        data: "2",
+        title: "ISO Standard Warehouse"
     },
     {
         data: "40+",
