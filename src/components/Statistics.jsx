@@ -14,7 +14,7 @@ const stats = [
     },
     {
         icon: <PiWarehouse className="h-12 w-12 mx-auto text-emerald-400" />,
-        value: '2+',
+        value: '3+',
         label: 'License',
     },
     {
@@ -24,7 +24,7 @@ const stats = [
     },
 ];
 
- {
+const Statistics = () => {
     return (
         <div className="relative bg-cover bg-center text-white py-12 object-cover" style={{ backgroundImage: "url('/images/formula.webp')" }}>
             <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for better readability */}
