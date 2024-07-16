@@ -23,7 +23,7 @@ const Service = () => {
 
                 <div className="mx-4 flex flex-wrap">
                     <ServiceCard
-                        title="Refreshing Design"
+                        title="Marketing team member 18+"
                         details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
                         icon={
                             <svg
@@ -41,8 +41,8 @@ const Service = () => {
                         }
                     />
                     <ServiceCard
-                        title="Based on Tailwind CSS"
-                        details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+                        title="Distribution Channel"
+                        details="Well managed distribution channel"
                         icon={
                             <svg
                                 width="36"
@@ -61,7 +61,7 @@ const Service = () => {
                         }
                     />
                     <ServiceCard
-                        title="100+ Components"
+                        title="100+ Products"
                         details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
                         icon={
                             <svg
@@ -91,7 +91,7 @@ const Service = () => {
                         }
                     />
                     <ServiceCard
-                        title="Speed Optimized"
+                        title="2 ISO Standard Warehouse"
                         details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
                         icon={
                             <svg
@@ -113,7 +113,7 @@ const Service = () => {
                         }
                     />
                     <ServiceCard
-                        title="Fully Customizable"
+                        title="Legal Team"
                         details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
                         icon={
                             <svg
@@ -131,7 +131,7 @@ const Service = () => {
                         }
                     />
                     <ServiceCard
-                        title="Regular Updates"
+                        title="Prompt Delivery"
                         details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
                         icon={
                             <svg
