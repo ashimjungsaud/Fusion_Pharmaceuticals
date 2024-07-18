@@ -9,7 +9,7 @@ const Hero = () => {
                     <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
 
                         <div>
-                            <h1 className="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">Connecting Devs with Employers</h1>
+                            <h1 className="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">Connecting Global Health Solutions</h1>
                             <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
 
                             <form action="#" method="POST" className="relative mt-8 rounded-full sm:mt-12">

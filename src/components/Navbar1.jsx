@@ -50,7 +50,7 @@ const Navbar1 = () => {
                 }
             >
                 {/* Mobile Logo */}
-                <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
+                <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>Fusion Pharmaceutiacals</h1>
 
                 {/* Mobile Navigation Items */}
                 {navItems.map(item => (

@@ -615,17 +615,13 @@ const AboutUs = () => {
                                     About Us
                                 </span>
                                 <h2 className="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px]">
-                                    Make your customers happy by giving services.
+                                    Connecting Global Health Solutions
                                 </h2>
                                 <p className="mb-5 text-base text-white dark:text-dark-6">
-                                    It is a long established fact that a reader will be distracted
-                                    by the readable content of a page when looking at its layout.
-                                    The point of using Lorem Ipsum is that it has a more-or-less.
+                                    At Fusion Pharmaceuticals, we specialize in the import, export, marketing, and management of medical products. With a steadfast commitment to excellence, we provide comprehensive transportation solutions ensuring seamless delivery and distribution of healthcare solutions worldwide. 
                                 </p>
                                 <p className="mb-8 text-base text-white dark:text-dark-6">
-                                    A domain name is one of the first steps to establishing your
-                                    brand. Secure a consistent brand image with a domain name that
-                                    matches your business.
+                                    Our services also encompass expert legal assistance, navigating regulatory landscapes with precision. By optimizing logistics and prioritizing quality, we empower partners to expand their market presence effectively. Join us in advancing healthcare access and outcomes globally through innovation and reliable support.
                                 </p>
 
                                 <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => navigate('service')}>

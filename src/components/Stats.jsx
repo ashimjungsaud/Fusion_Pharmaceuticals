@@ -32,7 +32,7 @@ const Stats = () => {
                             Partner with us
                         </h3>
                         <p className="mt-3 max-w-xl">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis sollicitudin quam ut tincidunt.
+                            Partner with fusion pharmaceuticals for seamless medical product import, export, marketing, and distribution solutions. We offer expertise in navigating global regulations, ensuring efficient logistics, and maximizing market reach. Join us in delivering superior healthcare solutions worldwide.
                         </p>
                     </div>
                     <div className="flex-none mt-6 md:mt-0 lg:mt-6">
